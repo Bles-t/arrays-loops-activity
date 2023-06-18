@@ -7,6 +7,14 @@
  *    hobbies
  */
 
+let hobbies = ["Gaming", "Cooking", "Reading", "Dancing"]
+
+for (i = 0; i < hobbies.length; i++) {
+  number = i + 1;
+  console.log(`${number}.${hobbies[i]}`);
+}
+console.log(`Total Hobbies:${i}`);
+
 
 // Example output
 // 1. swimming
@@ -17,13 +25,23 @@
 /**
  * #2 Colors
  * ---------
- * 1. Create an array of colors as strings
+ * 1. Create an ar`ray of colors as strings
  *    (include the color 'teal' at least once)
  * 2. Create a variable tealCount
- * 3. Write a loop that counts the number of times teal 
+ * 3. Write a loop that counts the number of times teal
  *    is in the array
  * 4. Output the array and number of times teal was found
  */
+
+let color = ["Black", "Teal", "Blue", "Brown", "Teal"];
+const tealCount = {};
+
+color.forEach(element => {
+  tealCount[element] = (tealCount[element] || 0) + 1;
+  console.log(element);
+})
+  ;
+console.log(`Teal was found ${tealCount} times`);
 
 
 // Example output
@@ -36,7 +54,7 @@
  * -------------
  * 1. Create an array of numbers (at least 5 numbers)
  * 2. Create variables oddNumbers and evenNumbers (empty arrays)
- * 3. Write a loop that puts all the odd numbers in the oddNumbers 
+ * 3. Write a loop that puts all the odd numbers in the oddNumbers
  *    array and even numbers in the evenNumbers array.
  * 4. Output the original array, odd number array and even number array
  */
