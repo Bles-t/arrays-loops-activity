@@ -88,8 +88,13 @@ console.log(`Even ${evenNumbers}`);
  * 3. Write a loop that adds the opposite value to the toggled array
  * 4. Output both arrays
  */
-
-
+newArray = [true, false, false, true, true];
+Toggled = [];
+for (let l = 0; l < newArray.length; l++) {
+  Toggled.push(!newArray[l]);
+}
+console.log(newArray);
+console.log(Toggled);
 // Example output
 // true, false, true, true
 // Toggled false, true, false, false
