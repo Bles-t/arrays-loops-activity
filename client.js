@@ -33,17 +33,17 @@ console.log(`Total Hobbies:${i}`);
  * 4. Output the array and number of times teal was found
  */
 
-let color = ["Black", "Teal", "Blue", "Brown", "Teal"];
-const tealCount = {};
+const color = ['Black', 'teal', 'Blue', 'Brown', 'teal'];
 
-color.forEach(element => {
-  tealCount[element] = (tealCount[element] || 0) + 1;
-  console.log(element);
-})
-  ;
+let tealCount = 0;
+
+for (let t = 0; t < color.length; t++) {
+  if (color[t] === 'teal') {
+    tealCount++;
+  }
+}
+console.log(`${color}`);
 console.log(`Teal was found ${tealCount} times`);
-
-
 // Example output
 // green, red, teal, orange, teal
 // Teal was found 2 times
@@ -58,6 +58,20 @@ console.log(`Teal was found ${tealCount} times`);
  *    array and even numbers in the evenNumbers array.
  * 4. Output the original array, odd number array and even number array
  */
+
+numbers = [3, 12, 7, 9, 6, 23];
+oddNumbers = [];
+evenNumbers = [];
+for (let n = 0; n < numbers.length; n++) {
+  if (numbers[n] % 2 === 0) {
+    evenNumbers.push(numbers[n]);
+  } else {
+    oddNumbers.push(numbers[n]);
+  }
+}
+console.log(`${numbers}`);
+console.log(`Odd ${oddNumbers}`);
+console.log(`Even ${evenNumbers}`);
 
 
 // Example output
